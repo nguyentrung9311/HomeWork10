@@ -92,21 +92,54 @@
                                     <constraint firstAttribute="width" secondItem="cTY-kt-aHa" secondAttribute="height" multiplier="1:1" id="UdZ-9c-w1z"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxc-bc-IsD" customClass="UIRoundView" customModule="HomeWork10" customModuleProvider="target">
+                                <rect key="frame" x="24" y="734" width="345" height="84"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Fo-Fl-QpN">
+                                        <rect key="frame" x="30" y="24.666666666666629" width="285" height="35"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="35" placeholderIntrinsicHeight="35" image="headphones" translatesAutoresizingMaskIntoConstraints="NO" id="Frv-dD-mzk">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feel Free to Ask, We Ready to Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfD-JP-pkv">
+                                                <rect key="frame" x="45" y="0.0" width="240" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.93725490199999995" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7Fo-Fl-QpN" firstAttribute="centerY" secondItem="wxc-bc-IsD" secondAttribute="centerY" id="8iC-5Y-QDK"/>
+                                    <constraint firstItem="7Fo-Fl-QpN" firstAttribute="centerX" secondItem="wxc-bc-IsD" secondAttribute="centerX" id="m0u-B4-KRP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qcg-e5-4gr" firstAttribute="leading" secondItem="ZLI-hd-pQA" secondAttribute="leading" id="1sU-R9-B4y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wxc-bc-IsD" secondAttribute="bottom" id="2Us-f3-O0C"/>
                             <constraint firstItem="ZLI-hd-pQA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="2dh-QE-IdD"/>
                             <constraint firstItem="Oiy-1w-veu" firstAttribute="centerY" secondItem="ZLI-hd-pQA" secondAttribute="centerY" id="6yv-DS-pxG"/>
+                            <constraint firstItem="wxc-bc-IsD" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.110672" id="9hx-Ua-f2O"/>
                             <constraint firstItem="xr6-sq-bzW" firstAttribute="leading" secondItem="ZLI-hd-pQA" secondAttribute="leading" id="AM6-jn-etT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oiy-1w-veu" secondAttribute="trailing" constant="24" id="JV1-qB-Tbk"/>
                             <constraint firstItem="Oiy-1w-veu" firstAttribute="leading" secondItem="ZLI-hd-pQA" secondAttribute="trailing" constant="20" id="QNf-2d-fma"/>
+                            <constraint firstItem="wxc-bc-IsD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Yp5-gW-tqb"/>
                             <constraint firstItem="ZLI-hd-pQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Zoq-tB-46t"/>
                             <constraint firstItem="cTY-kt-aHa" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.0305344" id="bnP-Mv-Dbf"/>
                             <constraint firstItem="H58-Zg-POY" firstAttribute="leading" secondItem="xr6-sq-bzW" secondAttribute="trailing" constant="16" id="ddz-ie-Spn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cTY-kt-aHa" secondAttribute="trailing" constant="24" id="eQ1-fa-wWx"/>
                             <constraint firstItem="xr6-sq-bzW" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.101781" id="lZ4-MD-iiu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wxc-bc-IsD" secondAttribute="trailing" constant="24" id="mk4-Gb-00x"/>
                             <constraint firstItem="H58-Zg-POY" firstAttribute="centerY" secondItem="xr6-sq-bzW" secondAttribute="centerY" id="o1D-mF-Fbr"/>
                             <constraint firstItem="Klm-p4-NsN" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.06" id="r1W-1d-LEr"/>
                             <constraint firstItem="xr6-sq-bzW" firstAttribute="top" secondItem="qcg-e5-4gr" secondAttribute="bottom" constant="24" id="tfF-vX-LjT"/>
@@ -129,6 +162,7 @@
     </designables>
     <resources>
         <image name="arrow-point-to-right" width="451.84600830078125" height="451.84698486328125"/>
+        <image name="headphones" width="512" height="512"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="pexels-camille-camila-16606842 (1)" width="640" height="800"/>
     </resources>
